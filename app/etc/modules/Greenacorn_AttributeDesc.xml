@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * Green Acorn Product AttributeDesc
+ * This package designed for Magento COMMUNITY edition
+ * ===================================================
+ *
+ * @category   Greenacorn
+ * @package    Greenacorn_AttributeDesc
+ * @author     Green Acorn
+ * @copyright  Copyright (c) 2013 Green Acorn.
+ */
+-->
+<config>
+    <modules>
+        <Greenacorn_AttributeDesc>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Greenacorn_AttributeDesc>
+    </modules>
+</config>

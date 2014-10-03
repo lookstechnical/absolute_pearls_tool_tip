@@ -1,0 +1,70 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * Green Acorn Product AttributeDesc
+ * This package designed for Magento COMMUNITY edition
+ * ===================================================
+ *
+ * @category   Greenacorn
+ * @package    Greenacorn_AttributeDesc
+ * @author     Green Acorn
+ * @copyright  Copyright (c) 2013 Green Acorn.
+ */
+-->
+<config>
+    <modules>
+        <Greenacorn_AttributeDesc>
+            <version>1.0.0</version>
+        </Greenacorn_AttributeDesc>
+    </modules>
+    <global>
+        <models>
+            <greenacorn_attributedesc>
+                <class>Greenacorn_AttributeDesc_Model</class>
+                <resourceModel>greenacorn_attributedesc_resource</resourceModel>
+            </greenacorn_attributedesc>
+            <greenacorn_attributedesc_resource>
+                <class>Greenacorn_AttributeDesc_Model_Resource</class>
+            </greenacorn_attributedesc_resource>
+        </models>
+        <resources>
+            <greenacorn_attributedesc_setup>
+                <setup>
+                    <module>Greenacorn_AttributeDesc</module>
+                    <class>Greenacorn_AttributeDesc_Model_Resource_Mysql4_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </greenacorn_attributedesc_setup>
+            <greenacorn_attributedesc_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </greenacorn_attributedesc_write>
+            <greenacorn_attributedesc_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </greenacorn_attributedesc_read>
+        </resources>
+        <blocks>
+            <adminhtml>
+                <rewrite>
+                    <catalog_product_attribute_edit_tab_main>Greenacorn_AttributeDesc_Block_Catalog_Product_Attribute_Edit_Tab_Main</catalog_product_attribute_edit_tab_main>
+                </rewrite>
+            </adminhtml>
+        </blocks>
+    </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Greenacorn_AttributeDesc before="Mage_Adminhtml">Greenacorn_AttributeDesc</Greenacorn_AttributeDesc>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+</config>

@@ -1,0 +1,13 @@
+{
+  "name": "webtise/tooltip_attribute",
+  "type": "magento-module",
+  "require": {
+    "magento-hackathon/magento-composer-installer": "*"
+  },
+  "extra":{
+        "map":[
+            ["app/code/local/Greenacorn/AttributeDesc", "app/code/local/Greenacorn/AttributeDesc"],
+            ["app/etc/modules/Greenacorn_AttributeDesc.xml", "app/etc/modules/Greenacorn_AttributeDesc.xml"]            
+        ]
+   }
+}
